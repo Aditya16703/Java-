@@ -1,7 +1,7 @@
 
 
 public class QueueMain{
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         CustomQueue queue = new CustomQueue(5);
         queue.insert(3);
         queue.insert(5);
@@ -11,6 +11,9 @@ public class QueueMain{
 
 
         queue.display();
+        System.out.println(queue.remove());
+        System.out.println(queue.remove());
+        System.out.println(queue.remove()); 
 
     }
     

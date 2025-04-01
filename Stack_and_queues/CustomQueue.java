@@ -15,10 +15,10 @@ public class CustomQueue {
     }
 
     public boolean isFull() {
-        return end == data.length - 1; // ptr is at last index 
+        return end == data.length ; // ptr is at last index 
     }
     
-
+  
     public boolean isEmpty(){
         return end == 0;
     }
@@ -61,7 +61,7 @@ public class CustomQueue {
 
     public void display(){
         for(int i=0; i<end;i++){
-            System.out.println(data[i] + " ");
+            System.out.print(data[i] + "<-");
         }
 
         System.out.println("END");
