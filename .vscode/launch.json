@@ -1,0 +1,141 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Greeting",
+            "request": "launch",
+            "mainClass": "a.Greeting",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Message",
+            "request": "launch",
+            "mainClass": "a.Message",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "abstraction.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "access.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "SubClass",
+            "request": "launch",
+            "mainClass": "access.SubClass",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "CustomArrayList",
+            "request": "launch",
+            "mainClass": "generics.CustomArrayList",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "interfaces.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "interfaces.extendDemo.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Box",
+            "request": "launch",
+            "mainClass": "properties.inheritance.Box",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "properties.inheritance.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(6)",
+            "request": "launch",
+            "mainClass": "properties.polymorphism.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Numbers",
+            "request": "launch",
+            "mainClass": "properties.polymorphism.Numbers",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "ObjectPrint",
+            "request": "launch",
+            "mainClass": "properties.polymorphism.ObjectPrint",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "Main(7)",
+            "request": "launch",
+            "mainClass": "singleton.Main",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "SubClass(1)",
+            "request": "launch",
+            "mainClass": "singleton.SubClass",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "InnerClass",
+            "request": "launch",
+            "mainClass": "staticBlock.InnerClass",
+            "projectName": "java_39c7ba42"
+        },
+        {
+            "type": "java",
+            "name": "StaticBlock",
+            "request": "launch",
+            "mainClass": "staticBlock.StaticBlock",
+            "projectName": "java_39c7ba42"
+        }
+    ]
+}

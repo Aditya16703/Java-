@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MazeWithRestrictions",
+            "request": "launch",
+            "mainClass": "MazeWithRestrictions",
+            "projectName": "Backtraking_and_Maze_Problem_fd41fa20"
+        },
+        {
+            "type": "java",
+            "name": "Mazeproblem",
+            "request": "launch",
+            "mainClass": "Mazeproblem",
+            "projectName": "Backtraking_and_Maze_Problem_fd41fa20"
+        }
+    ]
+}
