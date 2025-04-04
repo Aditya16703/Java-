@@ -195,8 +195,71 @@ public class LL {
             this.next = next;
       }
     }
+   
+
+    private void bubbleSort(int row , int col){
+        if( row == 0){
+            return;
+        
+        }
+
+        if(col < row){
+            Node first = get(col);
+            Node second = get(col + 1);
+
+            if(first.value > second.value){
+                // swap 
+                if(first == head){
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                }else if(second == tail){
+                    Node prev = get(col -1);
+
+                    prev.next = second;
+                    tail = first;
+                    second.next = tail;
+                    first.next = null;
+                }else{
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+
+            }
+            bubbleSort(row , col + 1);
+        }else{
+            bubbleSort(row - 1 , 0);
+        }
+    }
+
+    public static void main(String[] args, int index) {
+        LL first = new LL();
+        LL second = new LL();
+        first.insertLast(1);
+        first.insertLast(3); 
+        first.insertLast(5);
+
+        first.insertLast(1);
+        first.insertLast(2);
+        first.insertLast(9);
 
 
+        LL list  = new LL();
+        for(int j = 0 ; j < 10 ; j++){
+            list.insertLast(j);
+        }
+        list.display();
+        list.bubbleSort(list.size,0);     
+        list.display();
+        
+        
+
+
+    }
+
+    
 
 
     
