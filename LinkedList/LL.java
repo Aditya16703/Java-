@@ -196,16 +196,24 @@ public class LL {
       }
     }
    
-
+   
     private void bubbleSort(int row , int col){
         if( row == 0){
             return;
         
         }
 
+    
+
+
         if(col < row){
             Node first = get(col);
             Node second = get(col + 1);
+            if(first == null || second == null){
+                return ;
+            }
+            if(first.value == second.value){
+                // do nothing
 
             if(first.value > second.value){
                 // swap 
@@ -233,8 +241,70 @@ public class LL {
             bubbleSort(row - 1 , 0);
         }
     }
+}
 
-    public static void main(String[] args, int index) {
+
+    private void reverse(Node node){
+        if(node == null || node.next == null){
+            return;
+        }
+
+        if( node == tail){
+            head = node;
+            return;
+        }
+
+        reverse(node.next);
+        // node.next is the last node of the linked list
+
+         tail.next = node;
+         tail = node;
+         tail.next = null;
+        // node.next is the last node of the linked list
+
+        Node next = node.next;
+        node.next = null;
+        reverse(next);
+        next.next = node;
+        head = next; // head will be the last node of the linked list
+    }
+     
+    //through iteration 
+    // public ListNode reverseList(ListNode head) {
+    //     if(head == null){
+    //         return head;
+    //     }
+        
+    //      ListNode prev  = null;
+    //     ListNode present = head ;
+    //     ListNode next = present.next;
+        
+
+       
+
+       
+
+    //     while(present != null ){
+    //         present.next = prev;
+    //         prev = present;
+    //         present = next;
+    //         if(next != null){
+    //             next = next.next;
+    //         }
+            
+            
+            
+    //     }
+
+    //   return prev;
+        
+    // }
+
+
+   
+
+    
+    public static void main(String[] args) {
         LL first = new LL();
         LL second = new LL();
         first.insertLast(1);
@@ -264,3 +334,5 @@ public class LL {
 
     
 }
+
+
